@@ -751,6 +751,12 @@ The result is cached for one second to avoid hiccups."
    `(tabbar-separator ((,class (:inherit tabbar-default :background ,background-darker))))
    `(tabbar-unselected ((,class (:inherit tabbar-default :slant italic :weight semi-bold))))
 
+
+   ;; tab-bar - dark
+   `(tab-bar ((,class (:inherit variable-pitch :background ,background-darker :foreground ,green-light :height 0.9))))
+   `(tab-bar-tab ((,class (:inherit tab-bar :foreground ,orange :background ,background :weight bold))))
+   `(tab-bar-tab-inactive ((,class (:inherit tab-bar :foreground ,comment :slant italic :weight semi-bold))))
+
    ;; markup-face
    `(markup-title-0-face ((,class (:foreground ,blue :weight bold :underline t))))
    `(markup-title-1-face ((,class (:foreground ,purple :weight bold :underline t))))
