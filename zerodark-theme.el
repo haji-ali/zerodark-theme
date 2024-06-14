@@ -757,6 +757,13 @@ The result is cached for one second to avoid hiccups."
    `(tab-bar-tab ((,class (:inherit tab-bar :foreground ,orange :background ,background :weight bold))))
    `(tab-bar-tab-inactive ((,class (:inherit tab-bar :foreground ,comment :slant italic :weight semi-bold))))
 
+
+   ;; tab-bar - dark
+   `(tab-line ((,class (:inherit variable-pitch :background ,background-darker :foreground ,green-light :height 0.9))))
+   `(tab-line-tab ((,class (:inherit tab-line :foreground ,orange :background ,background :weight bold))))
+   `(tab-line-tab-current ((,class (:inherit tab-line-tab :foreground ,orange :background ,background :weight bold))))
+   `(tab-line-tab-inactive ((,class (:inherit tab-line-tab :foreground ,comment :slant italic :weight semi-bold))))
+
    ;; markup-face
    `(markup-title-0-face ((,class (:foreground ,blue :weight bold :underline t))))
    `(markup-title-1-face ((,class (:foreground ,purple :weight bold :underline t))))
