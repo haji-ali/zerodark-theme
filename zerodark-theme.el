@@ -761,8 +761,9 @@ The result is cached for one second to avoid hiccups."
    ;; tab-bar - dark
    `(tab-line ((,class (:inherit variable-pitch :background ,background-darker :foreground ,green-light :height 0.9))))
    `(tab-line-tab ((,class (:inherit tab-line :foreground ,orange :background ,background :weight bold))))
-   `(tab-line-tab-current ((,class (:inherit tab-line-tab :foreground ,orange :background ,background :weight bold))))
+   `(tab-line-tab-current ((,class (:inherit tab-line-tab :foreground ,orange :background ,background-lighter :weight bold))))
    `(tab-line-tab-inactive ((,class (:inherit tab-line-tab :foreground ,comment :slant italic :weight semi-bold))))
+   `(tab-line-highlight ((,class (:inherit tab-line-tab :foreground ,blue :weight semi-bold))))
 
    ;; markup-face
    `(markup-title-0-face ((,class (:foreground ,blue :weight bold :underline t))))
